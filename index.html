@@ -10,28 +10,30 @@
         body {
             background-color: rgb(29, 28, 28);
             color: rgb(56, 243, 32);
+          margin: 0;
         }
 
         #infos {
-            width: max-content;
-            max-width: 100%;
+          width: fit-content;
+          max-width: calc(100% - 16px);
             box-sizing: border-box;
-            margin: 0 auto;
+          margin: 0 auto 1rem;
             padding-inline: 8px;
             font-family: "SF Mono", "SF Mono Regular", monospace;
-            font-size: min(4vw, 18px);
+          font-size: clamp(12px, 4vw, 18px);
             white-space: pre-wrap;
             overflow-wrap: anywhere;
         }
 
-        #ex {
-          font-size: 30%;
-        }
-
+        #ex,
         #ge {
-            width: fit-content;
+          display: table;
+          width: max-content;
+          max-width: 100%;
             margin-inline: auto;
-            font-size: 10%;
+          font-size: clamp(3px, 1vw, 8px);
+          line-height: 1;
+          white-space: pre;
         }
 
     </style>
@@ -97,46 +99,6 @@ Terminal Font: None
 CPU: Aton-001345 (2) @ 3.40GHz
 Memory: 657MiB / 4096MiB
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
